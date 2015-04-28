@@ -1,0 +1,292 @@
+/*
+Theme Name: domain.com
+Author: Eaves Alobba
+*/
+
+@font-face {
+    font-family: 'daxcompactboldregular';
+    src: url('fonts/ufonts.com_daxcompact-bold-webfont.eot');
+    src: url('fonts/ufonts.com_daxcompact-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/ufonts.com_daxcompact-bold-webfont.woff2') format('woff2'),
+         url('fonts/ufonts.com_daxcompact-bold-webfont.woff') format('woff'),
+         url('fonts/ufonts.com_daxcompact-bold-webfont.ttf') format('truetype'),
+         url('fonts/ufonts.com_daxcompact-bold-webfont.svg#daxcompact-boldregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'djbwhatababeregular';
+    src: url('fonts/djb_what_a_babe-webfont.eot');
+    src: url('fonts/djb_what_a_babe-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/djb_what_a_babe-webfont.woff2') format('woff2'),
+         url('fonts/djb_what_a_babe-webfont.woff') format('woff'),
+         url('fonts/djb_what_a_babe-webfont.ttf') format('truetype'),
+         url('fonts/djb_what_a_babe-webfont.svg#djb_what_a_baberegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+html, body { 
+	margin:0;
+	padding:0;
+	background:#eff0f2;
+	border:0;
+}
+
+#header {
+	margin:0;
+	padding:0;
+	width:100%;
+	height:100px;
+	vertical-align:bottom;
+	position:relative
+}
+
+#header h1 {
+	margin:0;
+	padding:0;
+	width:100%;
+	font:normal normal 400 40px 'daxcompactboldregular', sans-serif;
+	color:#1d416f;
+	line-height:33px;
+	text-align:center;
+	text-transform:lowercase;
+	position:absolute;
+	bottom:1px;
+}
+
+#menu {
+	margin:0;
+	padding:0;
+	width:100%;
+	height:50px;
+	background:#57636a;
+}
+
+#menu ul {
+	margin:0;
+	padding:0;
+	list-style-type: none;
+	text-align:center;
+}
+
+#menu li {
+	margin:0 56px;
+	padding:0;
+	display:inline-block;
+	font:normal normal 400 18px 'djbwhatababeregular', sans-serif;
+	color:#ffffff;
+	line-height:50px;
+	text-align:center;
+}
+
+#menu li a {
+	margin:0;
+	padding:0;
+	color:#ffffff;
+	text-decoration:none;
+}
+
+#menu li a:hover { 
+	text-decoration:underline;
+}
+
+#domainBuy a {
+	margin:0 auto;
+	padding:0;
+	width:944px;
+	height:188px;
+	background: url(images/banner01.png) no-repeat;
+	display:block;
+	overflow:hidden;
+	text-indent:-9999px;
+	color:#fff; 
+}
+
+#domainBuy a:hover {
+	opacity: 0.8;
+    filter: alpha(opacity=80);
+}
+
+#content {
+	width:850px;
+	margin:40px auto 50px;
+	padding:0;
+}
+
+#homePage ul {
+	margin:0;
+	padding:0;
+	list-style:none;
+	text-align:center;
+        vertical-align: top;
+}
+
+#homePage ul li {
+	margin:0 17px 34px;
+	padding:0;
+	width:245px;
+	display:inline-table;
+	list-style:none;
+}
+#homePage ul li h1+p{
+    min-height: 200px;
+    max-height: 200px;
+}
+#homePage h1 {
+	margin:0 0 10px;
+	padding:0;
+	font:normal normal 400 20px 'daxcompactboldregular', sans-serif;
+	color:#1d416f;
+	line-height:25px;
+	text-transform:uppercase;
+	text-align:left;
+}
+
+#homePage p {
+	margin:0 0 10px;
+	padding:0;
+	font:normal normal 400 14px Arial, Helvetica, sans-serif;
+	color:#495359;
+	line-height:24px;
+	text-align:left;
+}
+
+#homePage p:last-child {
+	margin:0;
+}
+
+#homePage p a {
+	color:#1d416f;
+	text-decoration:none;
+}
+
+#homePage p a:hover { 
+	color:#495359;
+}
+
+#homePage h1 a {
+	color:#1d416f;
+	text-decoration:none;
+}
+
+#homePage h1 a:hover { 
+	color:#495359;
+}
+
+#footer {
+	margin:0;
+	padding:0;
+	width:100%;
+	background:#1d416f;
+}
+
+#footer ul {
+	margin:0 auto;
+	padding:1px 0 0;
+	width:800px;
+	list-style:none;
+	text-align:center;
+}
+
+#footer ul li {
+	margin:0 1px 0 0;
+	padding:20px;
+	width:226px;
+	min-height:280px;
+	display:block;
+	float:left;
+	list-style:none;
+	background:#254b7a;
+}
+
+#footer ul li:last-child {
+	margin:0;
+}
+
+#footer ul li ul {
+	margin:0;
+	padding:0;
+	width:auto;
+	list-style-type:square !important;
+	background:none;
+	text-align:left;
+}
+
+#footer ul li ul li{
+	margin:0 0 5px;
+	padding:0;
+	width:auto;
+	min-height:0;
+	display:block;
+	float:none;
+	list-style-type:square !important;
+	background:none;
+	font:normal normal 400 14px Arial, Helvetica, sans-serif;
+	line-height:24px;
+	color:#a5c1d6;
+}
+
+#footer ul li ul li a{
+	color:#a5c1d6;
+	text-decoration:none;
+}
+
+#footer ul li ul li a:hover{
+	border-bottom:1px dotted #a5c1d6;
+}
+
+#footer h1 {
+	margin:0 0 10px;
+	padding:0;
+	font:normal normal 400 20px 'daxcompactboldregular', sans-serif;
+	color:#eff0f2;
+	line-height:25px;
+	text-transform:uppercase;
+	text-align:left;
+}
+
+#footer p {
+	margin:0 0 10px;
+	padding:0;
+	font:normal normal 400 14px Arial, Helvetica, sans-serif;
+	color:#ffffff;
+	line-height:24px;
+	text-align:left;
+}
+
+#footer p:last-child {
+	margin:0;
+}
+
+#footer p a {
+	color:#a5c1d6;
+	text-decoration:none;
+}
+
+#footer p a:hover {
+	border-bottom:1px dotted #a5c1d6;
+}
+
+#footer .copyright {
+	margin:0;
+	padding:0;
+	width:100%;
+	height:35px;
+	background:#18375d;
+	list-style:none;
+	clear:both;
+}
+
+#footer .copyright p {
+	margin:0 auto;
+	padding:0;
+	width:800px;
+	font:normal normal 400 11px Arial, Helvetica, sans-serif;
+	color:#ffffff;
+	line-height:35px;
+	text-align:left;
+	text-transform:uppercase;
+}
