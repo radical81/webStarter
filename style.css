@@ -200,6 +200,11 @@ html, body {
 	text-align:center;
 }
 
+#footer ul li ul li:before{
+	padding-right:5px; 
+	content: "\00bb ";
+}
+
 #footer ul li {
 	margin:0 1px 0 0;
 	padding:20px;
