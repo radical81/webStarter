@@ -52,7 +52,7 @@ $collection = $rssReader->readCollection();
       <h1>About Me</h1>
       <p><?php echo $config->aboutMe; ?></p>
     </li>
-    <li> <a name="domains"></a>
+    <li id="domains"> <a name="domains"></a>
       <h1>Domains</h1>
       <ul>
           <?php 
