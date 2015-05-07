@@ -133,7 +133,9 @@ html, body {
 }
 #homePage ul li h1+p{
     min-height: 200px;
-    max-height: 200px;
+    max-height: 170px;
+    overflow: hidden;
+    padding-bottom: 12px;
 }
 #homePage h1 {
 	margin:0 0 10px;
@@ -176,6 +178,13 @@ html, body {
 	color:#495359;
 }
 
+#homePage img.articleImg {
+	margin:0 0 10px;
+	padding:0;
+	width:245px;
+	display:block;
+}
+
 #footer {
 	margin:0;
 	padding:0;
@@ -191,13 +200,17 @@ html, body {
 	text-align:center;
 }
 
+#footer ul li ul li:before{
+	padding-right:5px; 
+	content: "\00bb ";
+}
+
 #footer ul li {
 	margin:0 1px 0 0;
 	padding:20px;
 	width:226px;
 	min-height:280px;
-	display:block;
-	float:left;
+	display:table-cell;
 	list-style:none;
 	background:#254b7a;
 }

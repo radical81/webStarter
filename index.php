@@ -31,13 +31,16 @@ $collection = $rssReader->readCollection();
   <div id="homePage">
     <ul>
     <?php
+        $i = 0;
         foreach($collection as $c) {
     ?>
       <li>
+          <img class="articleImg" src="images/<?php echo $config->images[$i];?>" />
           <h1><a href="<?php echo $c['link'];?>" target="_blank"><?php echo $c['title'];?></a></h1>
         <p><?php echo $c['description']?></p>
       </li>
     <?php
+        $i++;
         }
     ?>
     </ul>
@@ -47,9 +50,9 @@ $collection = $rssReader->readCollection();
   <ul>
     <li> <a name="about"></a>
       <h1>About Me</h1>
-      <p>Ulamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehen- derit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa officia deserunt mollit anim id est laborum.</p>
+      <p><?php echo $config->aboutMe; ?></p>
     </li>
-    <li> <a name="domains"></a>
+    <li id="domains"> <a name="domains"></a>
       <h1>Domains</h1>
       <ul>
           <?php 
@@ -62,8 +65,7 @@ $collection = $rssReader->readCollection();
     <li> <a name="contact"></a>
       <h1>Contact Me</h1>
       <p>Rex Jason Alobba<br />
-        <a href="">email@email.com</a><br />
-        +00 0000 000</p>
+        <a href="mailto:<?php echo $config->email; ?>"><?php echo $config->email; ?></a></p>
     </li>
   </ul>
   <div class="copyright">
