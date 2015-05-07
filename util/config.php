@@ -12,4 +12,6 @@ Class Config {
         array('title'=> 'acct.co', 'link' => 'http://www.acct.co')
     );
     public $images = array('11kImage01.jpg','11kImage02.jpg','11kImage03.jpg');
+    public $aboutMe = "My name on the Internet is myspaceless. I'm a Christian, loving husband, musician, archer, and Software Engineer.";
+    public $email = "myspaceless@gmail.com";
 }
