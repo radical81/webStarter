@@ -1,11 +1,14 @@
 <?php
 
 Class Config {
-    public $siteName = "11k Trail Running";
-    public $siteDomainWord = "11k";    
-    public $siteDomainTld = "co";
-    public $buyNowLink = "sedo.com";
+    /*Customize Per Site - Begin*/
+    public $siteName = "Site Title";
+    public $siteDomainWord = "sitename";    
+    public $siteDomainTld = "tld";
+    public $buyNowLink = "http://sedo.com";
     public $rssUrl = 'http://feeds.reuters.com/reuters/oddlyEnoughNews?format=xml';
+    public $images = array('11kImage01.jpg','11kImage02.jpg','11kImage03.jpg');
+    /*Customize End*/
     public $limit = 3; 
     public $domains = array(
         array('title'=> 'dronefly.co', 'link' => 'http://www.dronefly.co'),
@@ -26,7 +29,6 @@ Class Config {
         array('title'=> 'innovator.ninja', 'link' => 'http://www.innovator.ninja'),
         array('title'=> 'hiit.ninja', 'link' => 'http://www.hiit.ninja')
     );
-    public $images = array('11kImage01.jpg','11kImage02.jpg','11kImage03.jpg');
     public $aboutMe = "My name on the Internet is myspaceless. I'm a Christian, loving husband, musician, archer, and Software Engineer.";
     public $email = "myspaceless@gmail.com";
 }
