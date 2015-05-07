@@ -31,13 +31,16 @@ $collection = $rssReader->readCollection();
   <div id="homePage">
     <ul>
     <?php
+        $i = 0;
         foreach($collection as $c) {
     ?>
       <li>
+          <img class="articleImg" src="images/<?php echo $config->images[$i];?>" />
           <h1><a href="<?php echo $c['link'];?>" target="_blank"><?php echo $c['title'];?></a></h1>
         <p><?php echo $c['description']?></p>
       </li>
     <?php
+        $i++;
         }
     ?>
     </ul>
